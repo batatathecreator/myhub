@@ -1544,7 +1544,7 @@ wait(9e9)
    end,
 })
 
-local Button = Tab:CreateButton({
+local Button = everyTab:CreateButton({
    Name = "netless",
    Callback = function()
    loadstring(game:HttpGet("pastebin.com/raw/4E9UU5G6"))()
