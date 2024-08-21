@@ -3,9 +3,7 @@ local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheoTheEp
 local window = lib.createWindow("vacationhub", "Vacation's IDK Hub", true) -- lib.createWindow(title, name, draggable)
 local em = window.createTab("Emotes")
 
-local nickname = "nosnaosabamos_1"
-
-local plr = game.Players[nickname]
+local plr = game.Players.LocalPlayer
 local chr = plr.Character
 local hum = chr:WaitForChild("Humanoid")
 
