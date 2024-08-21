@@ -7,6 +7,8 @@ local plr = game.Players.LocalPlayer
 local chr = plr.Character
 local hum = chr:WaitForChild("Humanoid")
 
+chr:WaitForChild("Animate").run.RunAnim.AnimationId = "rbxassetid://657564596"
+
 function animate(anim, val)
     local load = hum:LoadAnimation(anim)
     load.Looped = val or true
