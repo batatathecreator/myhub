@@ -7,8 +7,9 @@ local plr = game.Players.LocalPlayer
 local chr = plr.Character
 local hum = chr:WaitForChild("Humanoid")
 
-function animate(anim)
+function animate(anim, val)
     local load = hum:LoadAnimation(anim)
+    load.Looped = val or true
     load:Play()
 
     return load
@@ -59,6 +60,54 @@ end)
 em.createButton("Dance Moves", function()
 
     animate(game.ReplicatedStorage.Emotes["Dance Moves"])
+    
+end)
+
+em.createButton("Eagle", function()
+
+    animate(game.ReplicatedStorage.Emotes["Eagle"])
+    
+end)
+
+em.createButton("Flapper", function()
+
+    animate(game.ReplicatedStorage.Emotes["Flapper"])
+    
+end)
+
+em.createButton("Floss", function()
+
+    animate(game.ReplicatedStorage.Emotes["Floss"])
+    
+end)
+
+em.createButton("Fresh", function()
+
+    animate(game.ReplicatedStorage.Emotes["Fresh"])
+    
+end)
+
+em.createButton("Freestylin", function()
+
+    animate(game.ReplicatedStorage.Emotes["Freestylin"])
+    
+end)
+
+em.createButton("Downbreaker", function()
+
+    animate(game.ReplicatedStorage.Emotes["Downbreaker"])
+    
+end)
+
+em.createButton("Hype", function()
+
+    animate(game.ReplicatedStorage.Emotes["Hype"])
+    
+end)
+
+em.createButton("Flippin Incredible", function()
+
+    animate(game.ReplicatedStorage.Emotes["Flippin Incredible"], false)
     
 end)
 
